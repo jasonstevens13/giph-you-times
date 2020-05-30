@@ -1,0 +1,38 @@
+{{!-- this index.handlebars doc gets injected into the body of the main.handlebars file --}}
+
+{{!-- <h1>Eat Me Some Burgers!</h1>
+<p>A full stack of fun eaten!</p>
+<br>
+<h2>These burgers are ready... get 'em while they're hot!</h2> --}}
+
+{{!-- The #each/unless syntax here tells you where to list the table's burger data. The first list says to list the burgers if there are not devoured --}}
+{{!-- <ul>
+    {{#each burgers}}
+    {{#unless devoured}}
+    {{> burgers/burger-block devoured=false}}
+    {{/unless}}
+    {{/each}}
+</ul>
+<br>
+<h2>These burgers have been devoured!</h2> --}}
+
+{{!-- list here if devoured --}}
+{{!-- <ul>
+    {{#each burgers}}
+    {{#if devoured}}
+    {{> burgers/burger-block devoured=true}}
+    {{/if}}
+    {{/each}}
+</ul>
+<br> --}}
+{{!-- A form to enter a new burger into the table in database --}}
+{{!-- <h2>Cook Up Another Stacked Burger:</h2>
+<form class="create-form">
+
+    <div class="form-group">
+        <label for="bg">Burger Name:</label>
+        <input type="text" id="bg" name="burger_name">
+    </div>
+
+    <button type="submit">Add Burger</button>
+</form> --}}

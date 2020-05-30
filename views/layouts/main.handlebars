@@ -1,0 +1,25 @@
+{{!-- I am using express-handlebars here that serves up the front end html dynamically. --}}
+{{!-- This main.handlebars is the main page that has other data/page info loaded within the `{{{body}}}` syntax --}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    {{!-- <link rel="shortcut icon" href="../../public/assets/imgs/burger.png" type="image/x-icon"> --}}
+    <title>Eat Me Some Burgers!</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/assets/js/burgers.js"></script>
+</head>
+
+<body>
+
+    <img id="burgerPic" src="./assets/imgs/burger.png" class="img-fluid content-center" alt="Burger" alt="Burger">
+
+    {{{ body }}}
+</body>
+
+</html>
