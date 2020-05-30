@@ -1,0 +1,26 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "burger-app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonstevens13/burger.git"
+  },
+  "author": "Jason Stevens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonstevens13/burger/issues"
+  },
+  "homepage": "https://github.com/jasonstevens13/burger#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.11"
+  }
+}
