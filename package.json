@@ -1,21 +1,21 @@
 {
-  "name": "burger",
+  "name": "giph-you-times",
   "version": "1.0.0",
-  "description": "burger-app",
+  "description": "giph-you-times",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jasonstevens13/burger.git"
+    "url": "git+https://github.com/jasonstevens13/giph-you-times.git"
   },
   "author": "Jason Stevens",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jasonstevens13/burger/issues"
+    "url": "https://github.com/jasonstevens13/giph-you-times/issues"
   },
-  "homepage": "https://github.com/jasonstevens13/burger#readme",
+  "homepage": "https://github.com/jasonstevens13/giph-you-times#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",

@@ -1,12 +1,32 @@
 {{!-- this index.handlebars doc gets injected into the body of the main.handlebars file --}}
 
-{{!-- <h1>Eat Me Some Burgers!</h1>
-<p>A full stack of fun eaten!</p>
+<h1>Giph You Times</h1>
+<p>Top New York Times political articles:</p>
 <br>
-<h2>These burgers are ready... get 'em while they're hot!</h2> --}}
+<h2>Add your giph reaction!</h2>
 
-{{!-- The #each/unless syntax here tells you where to list the table's burger data. The first list says to list the burgers if there are not devoured --}}
-{{!-- <ul>
+<div id="nytApiResults">
+    <!-- Content -->
+</div>
+
+<div>
+    <label for="giph-search">Search for Your Giph Mood Here:</label>
+    <input type="search" id="searchGiphValue" aria-label="Search through Giphy content">
+    <div id="searchGiphBtn">
+        <button>Search</button>
+    </div>
+
+
+    <div id="giphyApiResults">
+        <!-- Content -->
+    </div>
+</div>
+
+
+{{!-- The #each/unless syntax here tells you where to list the table's burger data. The first list says to list the burgers if there are not devoured
+
+
+<ul>
     {{#each burgers}}
     {{#unless devoured}}
     {{> burgers/burger-block devoured=false}}
@@ -14,7 +34,7 @@
     {{/each}}
 </ul>
 <br>
-<h2>These burgers have been devoured!</h2> --}}
+<h2>These burgers have been devoured!</h2>
 
 {{!-- list here if devoured --}}
 {{!-- <ul>
@@ -24,9 +44,9 @@
     {{/if}}
     {{/each}}
 </ul>
-<br> --}}
-{{!-- A form to enter a new burger into the table in database --}}
-{{!-- <h2>Cook Up Another Stacked Burger:</h2>
+{{!-- <br> --}}
+A form to enter a new burger into the table in database --}}
+<h2>Cook Up Another Stacked Burger:</h2>
 <form class="create-form">
 
     <div class="form-group">
@@ -35,4 +55,4 @@
     </div>
 
     <button type="submit">Add Burger</button>
-</form> --}}
+</form>
