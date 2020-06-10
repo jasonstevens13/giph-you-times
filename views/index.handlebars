@@ -1,15 +1,4 @@
-{{!-- this index.handlebars doc gets injected into the body of the main.handlebars file --}}
-
-<h1>Giph You Times</h1>
-<p>Top New York Times political articles:</p>
-<br>
-<h2>Add your giph reaction!</h2>
-
-<div id="nytApiResults">
-    <!-- Content -->
-</div>
-
-<div>
+{{!-- <div>
     <label for="giph-search">Search for Your Giph Mood Here:</label>
     <input type="search" id="searchGiphValue" aria-label="Search through Giphy content">
     <div id="searchGiphBtn">
@@ -20,39 +9,183 @@
     <div id="giphyApiResults">
         <!-- Content -->
     </div>
-</div>
+</div> --}}
+
+{{!-- <div class="bg">
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <h1 id="headline1"></h1>
+                <p id="abstract1"></p>
+                <footer>
+                    <input type="text" class="form-control" placeholder="Giph This!" id="giph1"
+                        style="background-color: rgb(185, 137, 74)">
+                </footer>
+            </div>
+            <div class="col-md-4">
+                <h1 id="headline2"></h1>
+                <p id="abstract2"></p>
+                <form>
+                    <input type="text" class="form-control" placeholder="Giph This!" id="giph1"
+                        style="background-color: rgb(185, 137, 74)">
+                </form>
+            </div>
+            <div class="col-md-4">
+                <h1 id="headline3"></h1>
+                <p id="abstract3"></p>
+                <form>
+                    <input type="text" class="form-control" placeholder="Giph This!" id="giph1"
+                        style="background-color: rgb(185, 137, 74)">
+                </form>
+            </div>
+            <div class="col-md-4">
+                <h1 id="headline4"></h1>
+                <p id="abstract4"></p>
+                <form>
+                    <input type="text" class="form-control" placeholder="Giph This!" id="giph1"
+                        style="background-color: rgb(185, 137, 74)">
+                </form>
+            </div>
+            <div class="col-md-4">
+                <h1 id="headline5"></h1>
+                <p id="abstract5"></p>
+                <form>
+                    <input type="text" class="form-control" placeholder="Giph This!" id="giph1"
+                        style="background-color: rgb(185, 137, 74)">
+                </form>
+            </div>
+            <div class="col-md-4">
+                <h1 id="headline6"></h1>
+                <p id="abstract6"></p>
+                <form>
+                    <input type="text" class="form-control" placeholder="Giph This!" id="giph1"
+                        style="background-color: rgb(185, 137, 74)">
+                </form>
+            </div>
 
 
-{{!-- The #each/unless syntax here tells you where to list the table's burger data. The first list says to list the burgers if there are not devoured
+        </div> --}}
 
 
-<ul>
-    {{#each burgers}}
-    {{#unless devoured}}
-    {{> burgers/burger-block devoured=false}}
-    {{/unless}}
-    {{/each}}
-</ul>
-<br>
-<h2>These burgers have been devoured!</h2>
-
-{{!-- list here if devoured --}}
-{{!-- <ul>
-    {{#each burgers}}
-    {{#if devoured}}
-    {{> burgers/burger-block devoured=true}}
-    {{/if}}
-    {{/each}}
-</ul>
-{{!-- <br> --}}
-A form to enter a new burger into the table in database --}}
-<h2>Cook Up Another Stacked Burger:</h2>
-<form class="create-form">
-
-    <div class="form-group">
-        <label for="bg">Burger Name:</label>
-        <input type="text" id="bg" name="burger_name">
+<div class="row row-cols-1 row-cols-md-3 mr-md-3 ml-md-3 margin-top-6 margin-bottom-3 bg-secondary">
+    <div class="col mb-4">
+        <div class="card h-100 giph-card">
+            {{!-- <img src="..." class="card-img-top" alt="..."> --}}
+            <div class="card-body">
+                <h2 id="headline1" class="card-title titles">
+                </h2>
+                <p id="abstract1" class="card-text abstracts">.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+                <form class="giph-form">
+                    <div class="form-group">
+                        <label for="giphUrl1">Giph This Article with your Giphy URL!</label>
+                        <input type="text" class="form-control" id="giphUrl">
+                    </div>
+                    <button type="submit" class="btn btn-primary">SAVE</button>
+                </form>
+            </div>
+        </div>
     </div>
 
-    <button type="submit">Add Burger</button>
-</form>
+    <div class="col mb-4">
+        <div class="card h-100">
+            {{!-- <img src="..." class="card-img-top" alt="..."> --}}
+            <div class="card-body">
+                <h2 id="headline2" class="card-title">
+                </h2>
+                <p id="abstract2" class="card-text">.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+                <form class="giph-form">
+                    <div class="form-group">
+                        <label for="giphUrl1">Giph This Article with your Giphy URL!</label>
+                        <input type="text" class="form-control" id="giphUrl">
+                    </div>
+                    <button type="submit" class="btn btn-primary">SAVE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col mb-4">
+        <div class="card h-100">
+            {{!-- <img src="..." class="card-img-top" alt="..."> --}}
+            <div class="card-body">
+                <h2 id="headline3" class="card-title">
+                </h2>
+                <p id="abstract3" class="card-text">.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+                <form class="giph-form">
+                    <div class="form-group">
+                        <label for="giphUrl1">Giph This Article with your Giphy URL!</label>
+                        <input type="text" class="form-control" id="giphUrl">
+                    </div>
+                    <button type="submit" class="btn btn-primary">SAVE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col mb-4">
+        <div class="card h-100">
+            {{!-- <img src="..." class="card-img-top" alt="..."> --}}
+            <div class="card-body">
+                <h2 id="headline4" class="card-title">
+                </h2>
+                <p id="abstract4" class="card-text">.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+                <form class="giph-form">
+                    <div class="form-group">
+                        <label for="giphUrl1">Giph This Article with your Giphy URL!</label>
+                        <input type="text" class="form-control" id="giphUrl">
+                    </div>
+                    <button type="submit" class="btn btn-primary">SAVE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col mb-4">
+        <div class="card h-100">
+            {{!-- <img src="..." class="card-img-top" alt="..."> --}}
+            <div class="card-body">
+                <h2 id="headline5" class="card-title">
+                </h2>
+                <p id="abstract5" class="card-text">.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+                <form class="giph-form">
+                    <div class="form-group">
+                        <label for="giphUrl1">Giph This Article with your Giphy URL!</label>
+                        <input type="text" class="form-control" id="giphUrl">
+                    </div>
+                    <button type="submit" class="btn btn-primary">SAVE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col mb-4">
+        <div class="card h-100">
+            {{!-- <img src="..." class="card-img-top" alt="..."> --}}
+            <div class="card-body">
+                <h2 id="headline6" class="card-title">
+                </h2>
+                <p id="abstract6" class="card-text">.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+                <form class="giph-form">
+                    <div class="form-group">
+                        <label for="giphUrl1">Giph This Article with your Giphy URL!</label>
+                        <input type="text" class="form-control" id="giphUrl">
+                    </div>
+                    <button type="submit" class="btn btn-primary">SAVE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

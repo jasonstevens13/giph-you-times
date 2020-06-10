@@ -1,11 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
     let Articles = sequelize.define("Articles", {
-        section: {
-            type: DataTypes.STRING
-        },
-        subsection: {
-            type: DataTypes.STRING
-        },
         title: {
             type: DataTypes.STRING
         },

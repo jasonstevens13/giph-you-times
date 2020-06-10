@@ -1,44 +1,34 @@
 
-$(document).ready(function () {
+// $(document).ready(function () {
 
-    $("#searchGiphBtn").on("click", function (event) {
-        event.preventDefault();
+//     $("#searchGiphBtn").on("click", function (event) {
+//         event.preventDefault();
 
+//         let searchGiphValue = $("#searchGiphValue").val().trim();
 
-        let searchGiphValue = $("#searchGiphValue").val();
+//         let apiKey = "MAXynpYLbQF9j38rvvgC5NsiSPsvz3vR";
 
-        let apiKey = "va43vek2CSq4SHRgb7Y8r3ZW47Yh3YtQG";
+//         let queryURL = "http://api.giphy.com/v1/gifs/search?q=" + searchGiphValue + "&api_key=" + apiKey + "&limit=10";
 
-        let queryURL = "ttp://api.giphy.com/v1/gifs/search?q=" + searchGiphValue + "&api_key=" + apiKey + "&limit=10";
+//         $.ajax({
+//             url: queryURL,
+//             method: "GET"
+//         }).then(function (response) {
 
+//             let responseArray = response.data;
 
-        $.ajax({
-            url: queryURL,
-            method: "GET"
-        }).then(function (response) {
-
-            let responseArray = response.data;
-
-            for (let i = 0; i < responseArray.length; i++) {
+//             for (let i = 0; i < responseArray.length; i++) {
 
 
-                let gif = `<div id=${responseArray[i].id}><iframe src=${responseArray[i].embed_url} width="200" height="200" frameBorder="0"
-                class="giphy-embed" allowFullScreen></iframe></div><br>`;
+//                 let gif = `<div id=${responseArray[i].id}><iframe src=${responseArray[i].embed_url} width="200" height="200" frameBorder="0"
+//                 class="giphy-embed" allowFullScreen></iframe></div><br>`;
 
-                // updates result list here
-                $("#giphyApiResults").append(gif);
+//                 // updates result list here
+//                 $("#giphyApiResults").append(gif);
+//             }
+//             $("#searchGiphValue").val('');
+//             document.readyState;
+//         });
+//     });
 
-            }
-
-            document.readyState;
-
-
-
-        });
-
-
-
-    });
-
-
-});
+// });

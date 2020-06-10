@@ -8,7 +8,7 @@ module.exports = function (app) {
     db.Articles.findAll({
       include: [db.Giphs]
     }).then(function (dbArticles) {
-      res.json(dbArticles);
+      res.render("index", dbArticles);
     });
   });
 
@@ -28,7 +28,7 @@ module.exports = function (app) {
 
   app.post("/api/articles", function (req, res) {
     db.Articles.create(req.body).then(function (dbArticles) {
-      res.json(dbArticles);
+      res.render("giphs", dbArticles);
     });
   });
 
