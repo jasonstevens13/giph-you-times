@@ -39,3 +39,9 @@ body, html {
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       color: rgb(238, 180, 22);
   } */
+
+
+
+  .custom {
+    width: 250px !important;
+}
