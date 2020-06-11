@@ -17,8 +17,8 @@
     },
     "production": {
         "use_env_variable": "JAWSDB_URL",
-        "username": "root",
-        "password": "process.env.DB_PASSWORD",
+        "username": "mwkd0qfp48i3kw3m",
+        "password": "utcj0qzheqvqk5l4D",
         "database": "database_production",
         "host": "127.0.0.1",
         "port": 3306,

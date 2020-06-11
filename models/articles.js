@@ -1,5 +1,6 @@
 module.exports = function (sequelize, DataTypes) {
     let Articles = sequelize.define("Articles", {
+
         title: {
             type: DataTypes.STRING
         },
@@ -9,16 +10,19 @@ module.exports = function (sequelize, DataTypes) {
         url: {
             type: DataTypes.STRING
         },
+        user: {
+            type: DataTypes.STRING
+        },
     },
         {
             freezeTableName: true
         });
 
-    Articles.associate = function (models) {
-        // Associating Articles with Giphs
+    // Articles.associate = function (models) {
+    //     // Associating Articles with Giphs
 
-        Articles.hasMany(models.Giphs);
-    };
+    //     Articles.hasMany(models.Giphs);
+    // };
 
 
     return Articles;

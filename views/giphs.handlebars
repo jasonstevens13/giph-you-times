@@ -1,19 +1,29 @@
-{{!-- <div class="row row-cols-1 row-cols-md-3 mr-md-3 ml-md-3 margin-top-6 margin-bottom-3 bg-secondary">
+<div class="row row-cols-1 row-cols-md-3 mr-md-3 ml-md-3 margin-top-6 margin-bottom-3 bg-secondary">
+    {{#each articles}}
+
+
     <div class="col mb-4">
-        <div class="card h-100">
+        <div class="card h-100 giph-card">
             {{!-- <img src="..." class="card-img-top" alt="..."> --}}
-<div class="card-body">
-    <h2 id="headline1" class="card-title">
-    </h2>
-    <p id="abstract1" class="card-text"></p>
-</div>
-<div class="card-footer bg-transparent">
-    <h3>Giphy Reactions:</h3>
-    <div id="giphReactions">
-
+            <div class="card-body">
+                <h2 class="card-title">{{this.dataValues.title}}
+                </h2>
+                <p class="card-text">{{this.dataValues.abstract}}</p>
+                <img src={{this.dataValues.url}}>
+            </div>
+            <div class="card-footer bg-transparent">
+                <form class="giph-form">
+                    <div class="form-group">
+                        <label>Giphed By: {{this.dataValues.user}}</label>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-</div>
-</div>
-</div>
 
-</div> --}}
+
+
+    {{/each}}
+
+
+</div>
