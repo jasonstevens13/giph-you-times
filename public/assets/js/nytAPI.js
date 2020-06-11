@@ -2,18 +2,19 @@ $(document).ready(function () {
 
     let titlesArray = [];
     let abstractsArray = [];
+    let imgArray = [];
 
     console.log("This is running");
-    // Getting the top 6 political articles: 
+    // Getting the top 6 articles: 
     $.ajax({
-        url: "https://api.nytimes.com/svc/topstories/v2/politics.json?api-key=HrgfisQfKEMuQmyrSDSuIG1cnftR8iRV",
+        url: "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=HrgfisQfKEMuQmyrSDSuIG1cnftR8iRV",
         method: "GET"
     }).then(function (response) {
-        console.log(response)
-        console.log("Title: " + response.results[0].title + " Abstract: " + response.results[0].abstract)
+
         for (let i = 0; i < 6; i++) {
             titlesArray.push(response.results[i].title);
             abstractsArray.push(response.results[i].abstract);
+            imgArray.push(response.results[i].multimedia[0].url);
         }
         console.log(titlesArray);
         console.log(abstractsArray);
@@ -31,6 +32,13 @@ $(document).ready(function () {
         document.getElementById("abstract4").innerHTML = abstractsArray[3];
         document.getElementById("abstract5").innerHTML = abstractsArray[4];
         document.getElementById("abstract6").innerHTML = abstractsArray[5];
+        // Display imgs from NYT
+        document.getElementById("card1").innerHTML = `<img id="img1" src="${imgArray[0]}" class="card-img-top"></img>`;
+        document.getElementById("card2").innerHTML = `<img id="img1" src="${imgArray[1]}" class="card-img-top"></img>`;
+        document.getElementById("card3").innerHTML = `<img id="img1" src="${imgArray[2]}" class="card-img-top"></img>`;
+        document.getElementById("card4").innerHTML = `<img id="img1" src="${imgArray[3]}" class="card-img-top"></img>`;
+        document.getElementById("card5").innerHTML = `<img id="img1" src="${imgArray[4]}" class="card-img-top"></img>`;
+        document.getElementById("card6").innerHTML = `<img id="img1" src="${imgArray[5]}" class="card-img-top"></img>`;
 
     });
 
@@ -39,62 +47,3 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
-
-
-// $(document).ready(function () {
-
-
-//     event.preventDefault();
-
-//     // let apiKey = "vLDTAtFVhXGrIDYFWRJkmfUhJoPVLRhG";
-
-//     let queryURL = "https://api.nytimes.com/svc/topstories/v2/politics.json?api-key=HrgfisQfKEMuQmyrSDSuIG1cnftR8iRV";
-
-
-//     $.ajax({
-//         url: queryURL,
-//         method: "GET"
-//     }).then(function (response) {
-
-//         let responseArray = [responseArray.results];
-
-//         for (let i = 0; i < responseArray.length; i++) {
-
-
-//             let section = responseArray[i].section;
-//             let subsection = responseArray[i].subsection;
-//             let title = responseArray[i].title;
-//             let abstract = responseArray[i].abstract;
-//             let url = responseArray[i].url;
-//             let id = response[i].id;
-
-//             // vars for updating search list in DOM
-//             let div = $("<div>", { id: id });
-//             let h = $("<h2>", { text: title });
-//             let p = $("<p>", { text: abstract });
-//             let p2 = $("<p>", { text: url });
-//             let br = $("<br>");
-
-//             // updates search list here
-//             $("#nytApiResults").append(div);
-//             $(div).append(h);
-//             $(h).append(p);
-//             $(p2).append(p);
-//             $("#nytApiResults").append(br);
-
-
-//         }
-
-//         document.readyState;
-
-
-
-//     });
-
-
-// });

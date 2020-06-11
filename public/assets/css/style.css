@@ -1,0 +1,41 @@
+/* .jumbotron2 {
+    position: relative;
+    z-index:-101;
+    background: transparent;
+    margin: 24vh 0;
+    overflow-y: hidden;
+    bottom: auto;
+    max-height: 100px;
+   } */
+
+/* 
+body, html {
+    height: 100%;
+  }
+
+.jumbotron2{
+    position: relative;
+    z-index:-101;
+    max-height: 100px;
+  }
+#video-background { 
+    position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      z-index: -100;
+      width:100%;
+  }
+  .bg {
+    background-image: url("assets/newspaper.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h1 {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color: rgb(238, 180, 22);
+  } */

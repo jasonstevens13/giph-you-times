@@ -160,20 +160,6 @@ $(function () {
     });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     $("#giphUrl").val('');
 
     document.readyState;

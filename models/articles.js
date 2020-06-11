@@ -18,12 +18,6 @@ module.exports = function (sequelize, DataTypes) {
             freezeTableName: true
         });
 
-    // Articles.associate = function (models) {
-    //     // Associating Articles with Giphs
-
-    //     Articles.hasMany(models.Giphs);
-    // };
-
 
     return Articles;
 };
