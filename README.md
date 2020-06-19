@@ -1,7 +1,7 @@
 # Giph Your Times
 ![https://img.shields.io/badge/Giph-Your%20Times-orange](https://img.shields.io/badge/Giph-Your%20Times-orange)
 
-![Link](https://ancient-depths-99799.herokuapp.com/)
+[Deployed Link: https://ancient-depths-99799.herokuapp.com/](https://ancient-depths-99799.herokuapp.com/)
 
 
 ### Description
