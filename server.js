@@ -5,12 +5,17 @@
 // ******************************************************************************
 // *** Dependencies
 // =============================================================
+
+const compression = require('compression');
 const express = require("express");
 
 
 // Sets up the Express App
 // =============================================================
 const app = express();
+
+app.use(compression());
+
 const PORT = process.env.PORT || 8085;
 
 // Requiring our models for syncing
