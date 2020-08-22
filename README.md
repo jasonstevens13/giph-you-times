@@ -3,6 +3,9 @@
 
 [Deployed Link: https://ancient-depths-99799.herokuapp.com/](https://ancient-depths-99799.herokuapp.com/)
 
+![App1](https://github.com/jasonstevens13/giph-you-times/blob/master/screenshot1.JPG)
+
+![App2](https://github.com/jasonstevens13/giph-you-times/blob/master/screenshot2.JPG)
 
 ### Description
 This app makes an api call to The New York Times api, collecting the six most current articles on US politics. These articles appear in a card display on the main UI page. The user may look at each presented article and determine which one they would like to choose. The user will then use the nav bar to go to the Giphy site, retrieving a giph URL to input in the selected NYT article card. The user will enter that article and their name, both of which will be saved together in a database. If the user returns to the page, they may click on the nav bar to view the articles they have giphed.
